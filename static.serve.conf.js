@@ -1,9 +1,9 @@
 const STATIC_SERVE_CONFIG = {
   '/static/rulenode/custom-nodes-config.js': {
-    'target': 'dist/custom-nodes-config/bundles/custom-nodes-config.umd.js'
+    'target': 'dist/custom-nodes-config/fesm2015/custom-nodes-config.js'
   },
-  '/static/rulenode/custom-nodes-config.umd.js.map': {
-    'target': `dist/custom-nodes-config/bundles/custom-nodes-config.umd.js.map`
+  '/static/rulenode/custom-nodes-config.js.map': {
+    'target': 'dist/custom-nodes-config/fesm2015/custom-nodes-config.js.map'
   }
 }
 

@@ -17,7 +17,7 @@ function projectRoot() {
 }
 
 function sourcePackage() {
-  return path.join(projectRoot(), 'dist', 'custom-nodes-config', 'bundles', 'custom-nodes-config.umd.min.js');
+  return path.join(projectRoot(), 'dist', 'custom-nodes-config', 'fesm2015', 'custom-nodes-config.js');
 }
 
 function targetPackage() {
