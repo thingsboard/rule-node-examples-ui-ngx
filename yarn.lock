@@ -1885,10 +1885,10 @@
   dependencies:
     "@types/jasmine" "*"
 
-"@types/jquery@*", "@types/jquery@^3.5.6", "@types/jquery@^3.5.9":
-  version "3.5.9"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.9.tgz#08e4b1dcff0626926ffe545a2bc90f18140c53d6"
-  integrity sha512-B8pDk+sH/tSv/HKdx6EQER6BfUOb2GtKs0LOmozziS4h7cbe8u/eYySfUAeTwD+J09SqV3man7AMWIA5mgzCBA==
+"@types/jquery@*", "@types/jquery@^3.5.10", "@types/jquery@^3.5.9":
+  version "3.5.11"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.11.tgz#fb2a255e8376779e89a10ddd04bfc1a93398f861"
+  integrity sha512-lYZGdfOtUa0XFjIATQgiogqeTY5PNNMOmp3Jq48ghmJALL8t/IqABRqlEwdHfuUdA8iIE1uGD1HoI4a7Tiy6OA==
   dependencies:
     "@types/sizzle" "*"
 
@@ -5615,12 +5615,12 @@ jest-worker@^27.0.2, jest-worker@^27.0.6:
     supports-color "^8.0.0"
 
 jquery.terminal@^2.29.4:
-  version "2.29.4"
-  resolved "https://registry.yarnpkg.com/jquery.terminal/-/jquery.terminal-2.29.4.tgz#0403942e3f68a23d54ba9ad7c592f1da2b2829cd"
-  integrity sha512-ugzctBbbJmw3ZGIhYziBFEK8QnWAZy2q6sZUtmPgjni4ILg59tO0WJI9DkKiDZ4LQtdCVexQ5oP0J90jMN+TzA==
+  version "2.31.1"
+  resolved "https://registry.yarnpkg.com/jquery.terminal/-/jquery.terminal-2.31.1.tgz#b87cc238e539cb7eca38c31278ad33721de5456c"
+  integrity sha512-JVCL3mOmE+NQ1SvwHyRtJ18ICEylHoLqh0mmi0HResjeE7v/85rREfoLDtYfJxDxCNpTrznGl3HEoUCfjHnycA==
   dependencies:
     "@jcubic/lily" "^0.3.0"
-    "@types/jquery" "^3.5.6"
+    "@types/jquery" "^3.5.10"
     ansidec "^0.3.4"
     iconv-lite "^0.6.3"
     jquery "^3.6.0"
@@ -7933,9 +7933,9 @@ pretty-bytes@^5.3.0:
   integrity sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==
 
 prismjs@^1.23.0, prismjs@^1.25.0:
-  version "1.25.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
-  integrity sha512-WCjJHl1KEWbnkQom1+SzftbtXMKQoezOCYs5rECqMN+jP+apI7ftoflyqigqzopSO3hMhTEb0mFClA8lkolgEg==
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.26.0.tgz#16881b594828bb6b45296083a8cbab46b0accd47"
+  integrity sha512-HUoH9C5Z3jKkl3UunCyiD5jwk0+Hz0fIgQ2nbwU2Oo/ceuTAQAg+pPVnfdt2TJWRVLcxKh9iuoYDUSc8clb5UQ==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
