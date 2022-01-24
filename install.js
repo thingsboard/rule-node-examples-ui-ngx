@@ -4,7 +4,7 @@ const path = require('path');
 let _projectRoot = null;
 
 (async() => {
-  await fse.move(sourcePackage(),
+  await fse.copy(sourcePackage(),
     targetPackage(),
     {overwrite: true});
 })();
@@ -17,7 +17,7 @@ function projectRoot() {
 }
 
 function sourcePackage() {
-  return path.join(projectRoot(), 'dist', 'custom-nodes-config', 'fesm2015', 'custom-nodes-config.js');
+  return path.join(projectRoot(), 'dist', 'custom-nodes-config', 'system', 'custom-nodes-config.js');
 }
 
 function targetPackage() {

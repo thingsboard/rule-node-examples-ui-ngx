@@ -4,19 +4,11 @@ Configuration UI for Custom Rule Nodes from rule-node-examples ThingsBoard repos
 
 ## Build steps
 
-1) Cleanup
-    ```
-    yarn run cleanup 
-    ```
-2) Get ThingsBoard UI dependency
-    ```
-    yarn run getthingsboard 
-    ```
-3) Install dependencies
+1) Install dependencies
     ```
     yarn install 
     ```
-4) Production build    
+2) Production build    
     ```
     yarn run build 
     ```
@@ -24,13 +16,13 @@ Configuration UI for Custom Rule Nodes from rule-node-examples ThingsBoard repos
     ```
     ./target/generated-resources/public/static/custom-nodes-config.js
     ```
-5) Deploy Rule Nodes UI JavaScript code to to rule-node-examples
+3) Deploy Rule Nodes UI JavaScript code to to rule-node-examples
 
     Resulting **custom-nodes-config.js**
     should be copied to ```rule-node-examples/src/main/resources/public/static/rulenode/```
     directory of rule-node-examples repository.
 
-6) Run Rule Nodes UI in hot redeploy mode
+4) Run Rule Nodes UI in hot redeploy mode
 
     ```
     yarn start
