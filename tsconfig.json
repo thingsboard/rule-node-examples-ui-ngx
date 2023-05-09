@@ -12,7 +12,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "skipLibCheck": true,
-    "target": "es2017",
+    "target": "ES2022",
     "module": "es2020",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
@@ -39,7 +39,8 @@
       "@shared/*": ["node_modules/thingsboard/src/app/shared/*"],
       "@modules/*": ["node_modules/thingsboard/src/app/modules/*"],
       "@home/*": ["node_modules/thingsboard/src/app/modules/home/*"]
-    }
+    },
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

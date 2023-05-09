@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
+            "tsConfig": "projects/custom-nodes-config/tsconfig.lib.json",
             "project": "projects/custom-nodes-config/ng-package.json"
           },
           "configurations": {
@@ -37,6 +38,15 @@
             "project": "projects/custom-nodes-config/ng-package.json",
             "staticServeConfig": "static.serve.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/custom-nodes-config/**/*.ts",
+              "projects/custom-nodes-config/**/*.html"
+            ]
+          }
         }
       }
     }
@@ -44,6 +54,14 @@
   "defaultProject": "custom-nodes-config",
   "cli": {
     "packageManager": "yarn",
-    "analytics": false
+    "analytics": false,
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
+  },
+  "schematics": {
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
+    }
   }
 }
