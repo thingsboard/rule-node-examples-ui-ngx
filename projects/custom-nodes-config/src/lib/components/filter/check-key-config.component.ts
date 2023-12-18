@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppState } from '@core/public-api';
+import { AppState, isDefinedAndNotNull } from '@core/public-api';
 import { RuleNodeConfiguration, RuleNodeConfigurationComponent } from '@shared/public-api';
 import { Store } from '@ngrx/store';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -24,8 +24,13 @@ export class CheckKeyConfigComponent extends RuleNodeConfigurationComponent {
 
   protected onConfigurationSet(configuration: RuleNodeConfiguration) {
     this.checkKeyConfigForm = this.fb.group({
-      key: [configuration ? configuration.key : null, [Validators.required]]
+      key: [configuration.key, [Validators.required]]
     });
   }
 
+  protected prepareInputConfig(configuration: RuleNodeConfiguration): RuleNodeConfiguration {
+    return {
+      key: isDefinedAndNotNull(configuration?.key) ? configuration.key : null,
+    };
+  }
 }
