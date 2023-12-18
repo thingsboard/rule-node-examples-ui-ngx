@@ -1,10 +1,10 @@
 <section [formGroup]="getSumConfigForm" fxLayout="column">
     <mat-form-field class="mat-block">
-        <mat-label translate>tb.rulenode.input-key</mat-label>
-        <input matInput formControlName="inputKey" required>
+        <mat-label>{{'tb.rulenode.input-key' | translate}}</mat-label>
+        <input matInput formControlName="inputKey">
     </mat-form-field>
     <mat-form-field class="mat-block">
-        <mat-label translate>tb.rulenode.output-key</mat-label>
-        <input matInput formControlName="outputKey" required>
+        <mat-label>{{'tb.rulenode.output-key' | translate}}</mat-label>
+        <input matInput formControlName="outputKey">
     </mat-form-field>
 </section>

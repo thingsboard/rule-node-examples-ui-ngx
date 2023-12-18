@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppState } from '@core/public-api';
+import { AppState, isDefinedAndNotNull } from '@core/public-api';
 import { RuleNodeConfiguration, RuleNodeConfigurationComponent } from '@shared/public-api';
 import { Store } from '@ngrx/store';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -24,9 +24,16 @@ export class GetSumConfigComponent extends RuleNodeConfigurationComponent {
 
   protected onConfigurationSet(configuration: RuleNodeConfiguration) {
     this.getSumConfigForm = this.fb.group({
-      inputKey: [configuration ? configuration.inputKey : null, [Validators.required]],
-      outputKey: [configuration ? configuration.outputKey : null, [Validators.required]]
+      inputKey: [configuration.inputKey, [Validators.required]],
+      outputKey: [configuration.outputKey, [Validators.required]]
     });
+  }
+
+  protected prepareInputConfig(configuration: RuleNodeConfiguration): RuleNodeConfiguration {
+    return {
+      inputKey: isDefinedAndNotNull(configuration?.inputKey) ? configuration.inputKey : null,
+      outputKey: isDefinedAndNotNull(configuration?.outputKey) ? configuration.outputKey : null
+    };
   }
 
 }
