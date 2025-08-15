@@ -51,7 +51,6 @@
       }
     }
   },
-  "defaultProject": "custom-nodes-config",
   "cli": {
     "packageManager": "yarn",
     "analytics": false,
